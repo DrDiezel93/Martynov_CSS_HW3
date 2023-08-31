@@ -40,11 +40,15 @@ header{
 }
 
 .navigation{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu{
-    
+    width: 533px; /* max-width не работает, если в .navigation есть flex, он его сразу же сжимает*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .home{
@@ -70,11 +74,15 @@ main{
 }
 
 .main-content{
-
+    display: flex;
+    gap: 41px;
+    /* justify-content: space-between; */
 }
 
-.main-content-wrap{
-
+.main-content-btn-list{
+    display: flex;
+    align-items: center;
+    gap: 72px;
 }
 
 .text1{
@@ -95,10 +103,7 @@ main{
     font-weight: 400;
     line-height: normal;
     margin-bottom: 37px;
-}
-
-.main-content-btn-list{
-
+    max-width: 466px;
 }
 
 .video{
@@ -124,11 +129,8 @@ main{
     border: none;
 }
 
-
-footer{
-
-}
-
 .logos{
-    
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
 }
